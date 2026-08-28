@@ -1,0 +1,328 @@
+/* =========================================
+   교통덕후 허브 - Home CSS
+   ========================================= */
+
+
+/* HERO */
+
+.hero {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+    width: min(var(--max-width), calc(100% - 40px));
+
+    margin: 0 auto;
+    padding: 90px 0 80px;
+}
+
+.hero-label {
+    margin-bottom: 14px;
+
+    color: var(--primary);
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.hero h1 strong {
+    color: var(--primary);
+}
+
+.hero-description {
+    margin-top: 24px;
+
+    color: var(--text-secondary);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* SEARCH */
+
+.search-box {
+    max-width: 760px;
+
+    margin-top: 45px;
+
+    display: flex;
+    align-items: center;
+
+    height: 58px;
+
+    background: var(--white);
+
+    border: 2px solid var(--primary);
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.search-icon {
+    padding-left: 18px;
+
+    color: var(--primary);
+
+    font-size: 25px;
+    line-height: 1;
+}
+
+.search-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 100%;
+
+    padding: 0 15px;
+
+    border: 0;
+    outline: 0;
+
+    color: var(--text);
+    background: transparent;
+
+    font-size: 15px;
+}
+
+.search-box input::placeholder {
+    color: #9299a0;
+}
+
+.search-box button {
+    height: 100%;
+    padding: 0 25px;
+
+    border: 0;
+
+    background: var(--primary);
+    color: var(--white);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: background 0.15s ease;
+}
+
+.search-box button:hover {
+    background: var(--primary-dark);
+}
+
+
+/* SERVICE CARDS */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.service-grid-large {
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 16px;
+}
+
+.service-card {
+    position: relative;
+
+    min-height: 190px;
+
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #b9c4d0;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.service-card-large {
+    min-height: 160px;
+
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.service-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.bus-icon {
+    background: #1677c8;
+}
+
+.railway-icon {
+    background: #0b3d91;
+}
+
+.vehicle-icon {
+    background: #4c5966;
+}
+
+.map-icon {
+    background: #087f5b;
+}
+
+.location-icon {
+    background: #6b4bb3;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-content h3 {
+    margin-bottom: 5px;
+
+    font-size: 21px;
+}
+
+.service-content p {
+    color: var(--text-secondary);
+
+    font-size: 14px;
+}
+
+.card-arrow {
+    position: absolute;
+    right: 25px;
+    bottom: 24px;
+
+    color: var(--primary);
+
+    font-size: 22px;
+}
+
+
+/* QUICK */
+
+.quick-section {
+    background: #eef1f4;
+    border-top: 1px solid var(--border);
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.quick-card {
+    min-height: 150px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.quick-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.quick-card span {
+    color: var(--primary);
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.quick-card strong {
+    font-size: 19px;
+}
+
+.quick-card small {
+    color: var(--text-secondary);
+
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero-inner {
+        width: calc(100% - 28px);
+
+        padding: 65px 0 55px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .search-box {
+        height: 54px;
+        margin-top: 35px;
+    }
+
+    .search-box button {
+        padding: 0 17px;
+    }
+
+    .service-grid,
+    .service-grid-large,
+    .quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: 160px;
+    }
+
+    .service-card-large {
+        min-height: 140px;
+    }
+}
