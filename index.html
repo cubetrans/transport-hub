@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="교통 덕후들을 위한 올인원 교통 플랫폼">
-    <meta name="theme-color" content="#0b3d91">
+    <meta
+        name="description"
+        content="교통 덕후들을 위한 버스 타이핑, 로지스, 커뮤니티 플랫폼"
+    >
 
     <title>교통덕후 허브</title>
 
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- 헤더 -->
+    <!-- =========================
+         HEADER
+    ========================== -->
     <header class="site-header">
         <div class="header-inner">
 
@@ -24,131 +27,128 @@
                 <span class="logo-text">교통덕후 허브</span>
             </a>
 
-            <nav class="main-nav">
-                <a href="#" class="nav-item">버스</a>
-                <a href="#" class="nav-item">철도</a>
-                <a href="#" class="nav-item">차량</a>
-                <a href="#" class="nav-item">노선도</a>
-                <a href="#" class="nav-item">지도</a>
+            <nav class="main-nav" aria-label="주요 메뉴">
+                <a href="index.html" class="active">홈</a>
+                <a href="bus-typing.html">버스 타이핑</a>
+                <a href="logis.html">로지스</a>
+                <a href="community.html">커뮤니티</a>
             </nav>
 
             <div class="header-actions">
-                <a href="#" class="login-button">로그인</a>
+                <a href="login.html" class="login-button">로그인</a>
             </div>
 
         </div>
     </header>
 
 
-    <!-- 메인 -->
+    <!-- =========================
+         MAIN
+    ========================== -->
     <main>
 
-        <!-- 히어로 -->
+        <!-- HERO -->
         <section class="hero">
             <div class="hero-inner">
 
-                <div class="hero-text">
-                    <p class="hero-label">TRANSPORT FOR ENTHUSIASTS</p>
+                <p class="hero-label">TRANSPORT ENTHUSIAST HUB</p>
 
-                    <h1>
-                        교통 덕후를 위한<br>
-                        <strong>모든 것</strong>
-                    </h1>
+                <h1>
+                    교통을 좋아하는 사람들을 위한<br>
+                    <strong>세 가지 공간</strong>
+                </h1>
 
-                    <p class="hero-description">
-                        버스부터 철도, 차량, 노선도까지<br>
-                        다양한 교통 정보를 한곳에서 만나보세요.
-                    </p>
-                </div>
-
-                <!-- 통합 검색 -->
-                <div class="search-box">
-                    <span class="search-icon">⌕</span>
-
-                    <input
-                        type="text"
-                        id="main-search"
-                        placeholder="버스, 역, 노선, 차량을 검색하세요"
-                        autocomplete="off"
-                    >
-
-                    <button type="button" id="search-button">
-                        검색
-                    </button>
-                </div>
+                <p class="hero-description">
+                    버스를 타이핑하고, 철도 정보를 찾아보고,<br>
+                    다른 교통 덕후들과 이야기를 나눠보세요.
+                </p>
 
             </div>
         </section>
 
 
-        <!-- 주요 서비스 -->
-        <section class="services section">
+        <!-- SERVICES -->
+        <section class="services">
             <div class="section-inner">
 
                 <div class="section-heading">
                     <span class="section-label">SERVICES</span>
                     <h2>주요 서비스</h2>
-                    <p>교통 정보를 쉽고 빠르게 찾아보세요.</p>
+                    <p>교통덕후 허브의 핵심 기능입니다.</p>
                 </div>
 
 
                 <div class="service-grid">
 
-                    <a href="#" class="service-card">
-                        <div class="service-icon bus-icon">B</div>
-                        <div class="service-content">
-                            <h3>버스</h3>
-                            <p>노선과 정류장 정보를 찾아보세요.</p>
+                    <!-- 버스 타이핑 -->
+                    <a
+                        href="bus-typing.html"
+                        class="service-card"
+                    >
+                        <div class="service-number">01</div>
+
+                        <div class="service-icon bus-icon">
+                            🚌
                         </div>
-                        <span class="card-arrow">→</span>
-                    </a>
 
-
-                    <a href="#" class="service-card">
-                        <div class="service-icon railway-icon">R</div>
                         <div class="service-content">
-                            <h3>철도</h3>
-                            <p>철도 노선과 역 정보를 확인하세요.</p>
-                        </div>
-                        <span class="card-arrow">→</span>
-                    </a>
+                            <h3>버스 타이핑</h3>
 
-
-                    <a href="#" class="service-card">
-                        <div class="service-icon vehicle-icon">V</div>
-                        <div class="service-content">
-                            <h3>차량 도감</h3>
-                            <p>버스와 철도 차량을 찾아보세요.</p>
-                        </div>
-                        <span class="card-arrow">→</span>
-                    </a>
-
-                </div>
-
-
-                <div class="service-grid service-grid-large">
-
-                    <a href="#" class="service-card service-card-large">
-                        <div class="service-icon map-icon">M</div>
-                        <div class="service-content">
-                            <h3>노선도 생성기</h3>
                             <p>
-                                나만의 버스·철도 노선도를 직접 만들어보세요.
+                                실제 버스 정류장 이름을 입력하며
+                                타자 실력을 키워보세요.
                             </p>
                         </div>
-                        <span class="card-arrow">→</span>
+
+                        <span class="service-arrow">→</span>
                     </a>
 
 
-                    <a href="#" class="service-card service-card-large">
-                        <div class="service-icon location-icon">L</div>
+                    <!-- 로지스 -->
+                    <a
+                        href="logis.html"
+                        class="service-card"
+                    >
+                        <div class="service-number">02</div>
+
+                        <div class="service-icon logis-icon">
+                            🚆
+                        </div>
+
                         <div class="service-content">
-                            <h3>교통 지도</h3>
+                            <h3>로지스</h3>
+
                             <p>
-                                지도에서 대한민국의 교통망을 살펴보세요.
+                                열차와 철도 운행 정보를
+                                한곳에서 확인해보세요.
                             </p>
                         </div>
-                        <span class="card-arrow">→</span>
+
+                        <span class="service-arrow">→</span>
+                    </a>
+
+
+                    <!-- 커뮤니티 -->
+                    <a
+                        href="community.html"
+                        class="service-card"
+                    >
+                        <div class="service-number">03</div>
+
+                        <div class="service-icon community-icon">
+                            💬
+                        </div>
+
+                        <div class="service-content">
+                            <h3>커뮤니티</h3>
+
+                            <p>
+                                버스와 철도 이야기를
+                                다른 교통 덕후들과 나눠보세요.
+                            </p>
+                        </div>
+
+                        <span class="service-arrow">→</span>
                     </a>
 
                 </div>
@@ -157,34 +157,122 @@
         </section>
 
 
-        <!-- 기타 기능 -->
-        <section class="quick-section section">
+        <!-- COMMUNITY PREVIEW -->
+        <section class="preview-section">
             <div class="section-inner">
 
-                <div class="section-heading">
-                    <span class="section-label">MORE</span>
-                    <h2>더 많은 기능</h2>
+                <div class="preview-layout">
+
+                    <div class="preview-title">
+                        <span class="section-label">COMMUNITY</span>
+
+                        <h2>
+                            최근 커뮤니티
+                        </h2>
+
+                        <p>
+                            최신 교통 이야기를 확인해보세요.
+                        </p>
+
+                        <a
+                            href="community.html"
+                            class="text-link"
+                        >
+                            커뮤니티 바로가기 →
+                        </a>
+                    </div>
+
+
+                    <div class="preview-list">
+
+                        <a href="community.html" class="preview-item">
+                            <div>
+                                <span class="preview-category">
+                                    철도
+                                </span>
+
+                                <strong>
+                                    오늘 찍은 전동차 사진
+                                </strong>
+                            </div>
+
+                            <span class="preview-arrow">→</span>
+                        </a>
+
+
+                        <a href="community.html" class="preview-item">
+                            <div>
+                                <span class="preview-category">
+                                    버스
+                                </span>
+
+                                <strong>
+                                    새로운 버스 노선 생겼네요
+                                </strong>
+                            </div>
+
+                            <span class="preview-arrow">→</span>
+                        </a>
+
+
+                        <a href="community.html" class="preview-item">
+                            <div>
+                                <span class="preview-category">
+                                    자유
+                                </span>
+
+                                <strong>
+                                    요즘 가장 좋아하는 노선
+                                </strong>
+                            </div>
+
+                            <span class="preview-arrow">→</span>
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="quick-grid">
+            </div>
+        </section>
 
-                    <a href="#" class="quick-card">
-                        <span>통계</span>
-                        <strong>교통 통계</strong>
-                        <small>다양한 교통 데이터를 확인하세요.</small>
-                    </a>
 
-                    <a href="#" class="quick-card">
-                        <span>RANDOM</span>
-                        <strong>랜덤 교통 미션</strong>
-                        <small>오늘의 교통 미션을 뽑아보세요.</small>
-                    </a>
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="section-inner">
 
-                    <a href="#" class="quick-card">
-                        <span>SEARCH</span>
-                        <strong>통합 검색</strong>
-                        <small>버스·철도·차량을 한 번에 검색하세요.</small>
-                    </a>
+                <div class="cta-box">
+
+                    <div>
+                        <span class="section-label">
+                            TRANSPORT HUB
+                        </span>
+
+                        <h2>
+                            지금 교통덕후 허브를 시작해보세요.
+                        </h2>
+
+                        <p>
+                            회원가입하면 커뮤니티와 다양한 개인 기능을
+                            이용할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="cta-actions">
+                        <a
+                            href="signup.html"
+                            class="cta-button primary"
+                        >
+                            회원가입
+                        </a>
+
+                        <a
+                            href="community.html"
+                            class="cta-button secondary"
+                        >
+                            둘러보기
+                        </a>
+                    </div>
 
                 </div>
 
@@ -194,26 +282,36 @@
     </main>
 
 
-    <!-- 푸터 -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer class="site-footer">
         <div class="footer-inner">
 
-            <div>
+            <div class="footer-brand">
                 <strong>교통덕후 허브</strong>
-                <p>교통 덕후들을 위한 올인원 플랫폼</p>
+
+                <p>
+                    버스 · 철도 · 커뮤니티
+                </p>
             </div>
 
-            <div class="footer-info">
-                <span>TRANSPORT HUB</span>
-                <span>© 2026</span>
+            <div class="footer-links">
+                <a href="index.html">홈</a>
+                <a href="bus-typing.html">버스 타이핑</a>
+                <a href="logis.html">로지스</a>
+                <a href="community.html">커뮤니티</a>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 Transport Hub
             </div>
 
         </div>
     </footer>
 
 
-    <script src="js/common.js"></script>
-    <script src="js/home.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
